@@ -1,0 +1,18 @@
+﻿---
+ID: "515a17e8-2085-4a36-b959-a0544ed54187"
+Parent: "19fce6a4-ee24-425b-82a9-c5def18c7628"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/HTTP Strict Transport Policy/HSTS
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T184353Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

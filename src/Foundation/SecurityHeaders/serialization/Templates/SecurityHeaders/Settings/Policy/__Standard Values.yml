@@ -1,0 +1,23 @@
+﻿---
+ID: "dd0a41b0-2cb5-4fa2-8ad2-ebdb93c09242"
+Parent: "ec2f720b-e083-49b3-af4d-65a07b5af4da"
+Template: "ec2f720b-e083-49b3-af4d-65a07b5af4da"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/Policy/__Standard Values
+DB: master
+SharedFields:
+- ID: "7eb4d7af-0d58-4229-a73a-8f5b2bb91ef2"
+  Hint: Allowed Hosts
+  Type: TreelistEx
+  Value: "{0B2347A4-CFC7-43DB-9DB3-141B727ECF59}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180417T181631Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

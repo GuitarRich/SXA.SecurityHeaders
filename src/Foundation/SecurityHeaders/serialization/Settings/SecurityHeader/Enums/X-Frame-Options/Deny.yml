@@ -1,0 +1,18 @@
+﻿---
+ID: "69f84f94-e092-47fc-bbe3-282e5a98eee0"
+Parent: "33989792-18b9-4548-96fe-ebd08f15d571"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: "/sitecore/system/Settings/Foundation/SecurityHeader/Enums/X-Frame-Options/Deny"
+DB: master
+SharedFields:
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: DENY
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T185209Z

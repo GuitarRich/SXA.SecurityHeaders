@@ -1,0 +1,32 @@
+﻿---
+ID: "d7db8324-c0a8-4d0d-9491-c19aa43641b4"
+Parent: "19fce6a4-ee24-425b-82a9-c5def18c7628"
+Template: "19fce6a4-ee24-425b-82a9-c5def18c7628"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/HTTP Strict Transport Policy/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: 
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T184357Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b41b8fc8-8db8-4254-b3d3-f8766c95bc24"
+      Hint: Include Sub Domains
+      Type: Checkbox
+      Value: 1
+    - ID: "f57fd334-1877-4926-8692-4df1efc8fb89"
+      Hint: Max Age
+      Value: 63072000

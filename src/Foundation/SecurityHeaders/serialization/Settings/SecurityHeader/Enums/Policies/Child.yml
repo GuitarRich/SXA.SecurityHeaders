@@ -1,0 +1,22 @@
+﻿---
+ID: "32459b40-f033-473c-a760-a0076a5753d9"
+Parent: "04aa9242-b0ff-4967-97cc-aa1ad97a7fd5"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: /sitecore/system/Settings/Foundation/SecurityHeader/Enums/Policies/Child
+DB: master
+SharedFields:
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: "child-src"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Child (Controls sources of nested browsing contexts like &lt;frame&gt; and &lt;iframe&gt;)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180417T182555Z

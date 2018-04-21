@@ -1,0 +1,28 @@
+﻿---
+ID: "03888df2-c647-4339-a822-5b9c85f4c7ce"
+Parent: "9e8e44e4-3eab-4a32-bdea-1d4d42364b89"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/XSS Protection/XSS Protection/Enabled
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: "This header protects from cross-site scripting (XSS) attacks. It provides similar protection as Content-Security-Policy but protects older browsers."
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: "This header protects from cross-site scripting (XSS) attacks."
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T160710Z

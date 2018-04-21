@@ -1,0 +1,64 @@
+﻿---
+ID: "c01a8fe2-ada2-44dd-a66e-8b9acc91964c"
+Parent: "91364f2a-00e1-47ef-8b47-0b4cd4b03402"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: "/sitecore/system/Modules/PowerShell/Script Library/SXA Security Headers/Functions/Policy/Show-NewPolicyDialog"
+DB: master
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    function Show-NewPolicyDialog {
+        [CmdletBinding()]
+        param(
+            [Parameter(Mandatory = $true, Position = 0 )]
+            [Item]$Root
+        )
+    
+        begin {
+            Write-Verbose "Cmdlet Show-NewPolicyDialog - Begin"
+        }
+    
+        process {
+            Write-Verbose "Cmdlet Show-NewPolicyDialog - Process"
+            
+            $existingPolicies = $root | Get-ChildItem | Select -Expand Name
+            Write-Host $existingPolicies
+    
+            $policies = Get-ChildItem -path master:/sitecore/system/Settings/Foundation/SecurityHeader/Enums/Policies
+            $policiesAvailable = $policies | Select { $_.name, $_["value"] }
+            
+            $options = New-Object System.Collections.Specialized.OrderedDictionary
+            $policies | Where-Object -FilterScript { `
+                Write-Host " -> Comparing policy [$($_["value"])]"
+                $existingPolicies -notcontains $_["value"]
+            } | `
+            ForEach-Object -Process { $options.Add($_.DisplayName, $_.ID) }
+    
+            $dialogParmeters = @()
+            $dialogParmeters += @{ Name = "newPolicyId"; Title = "Policy Type"; Options = $options; }
+    
+            $result = Read-Variable -Parameters $dialogParmeters `
+                -Description ("Add a new content security policy to your site:") `
+                -Title ("New Content Security Policy") -Width 450 -Height 200 -OkButtonName "Proceed" -CancelButtonName "Abort" -ShowHints
+    
+            if ($result -ne "ok") {
+                Exit
+            }
+    
+            $newPolicy = Get-Item -Path master: -ID $newPolicyId
+            $newPolicy
+        }
+    
+        end {
+            Write-Verbose "Cmdlet Show-NewPolicyDialog - End"
+        }
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180417T182133Z

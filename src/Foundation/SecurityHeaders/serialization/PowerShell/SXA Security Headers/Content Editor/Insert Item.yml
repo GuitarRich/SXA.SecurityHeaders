@@ -1,0 +1,30 @@
+﻿---
+ID: "a0cdc531-24c8-43e1-a845-e4e79b64e7a1"
+Parent: "84570184-0703-41c2-a286-5a93548b898f"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/SXA Security Headers/Content Editor/Insert Item
+DB: master
+SharedFields:
+- ID: "613d128b-7bf2-40f4-84cb-6717408f9806"
+  Hint: ShowRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{980DF901-5FE7-4E97-A0D4-7E0A8B9D4CA4}">
+        <conditions>
+          <condition
+            id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+            uid="0B14314634704C32A9438BD325998B5C"
+            templateid="{14E4990C-0EC4-4F7F-BA83-A3FA8ACDD941}" />
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180417T181203Z

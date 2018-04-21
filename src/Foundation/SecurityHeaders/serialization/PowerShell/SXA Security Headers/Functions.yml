@@ -1,0 +1,14 @@
+﻿---
+ID: "630d1650-37d0-441b-a3d0-404861f48be4"
+Parent: "22cc02e8-3f3d-4464-8f22-1edc28b6314c"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/SXA Security Headers/Functions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180417T182050Z

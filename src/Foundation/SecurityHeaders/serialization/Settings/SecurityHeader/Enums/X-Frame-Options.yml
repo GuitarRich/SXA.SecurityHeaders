@@ -1,0 +1,14 @@
+﻿---
+ID: "33989792-18b9-4548-96fe-ebd08f15d571"
+Parent: "e2a2af7c-5ae9-44df-a930-81fb900dedc9"
+Template: "0a92feee-0e15-4e81-b044-2ad901b88ddd"
+Path: "/sitecore/system/Settings/Foundation/SecurityHeader/Enums/X-Frame-Options"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T185200Z

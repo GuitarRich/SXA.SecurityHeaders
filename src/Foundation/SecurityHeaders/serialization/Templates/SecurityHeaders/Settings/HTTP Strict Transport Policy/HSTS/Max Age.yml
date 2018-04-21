@@ -1,0 +1,29 @@
+﻿---
+ID: "f57fd334-1877-4926-8692-4df1efc8fb89"
+Parent: "515a17e8-2085-4a36-b959-a0544ed54187"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/HTTP Strict Transport Policy/HSTS/Max Age
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Number
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: |
+      How long user agents will redirect to HTTPS, in seconds. This tells a browser "once you've seen this, assume that all requests to this domain will be over HTTPS for this long." Mozilla recommends 2 years, or 63072000 seconds. This flag is required.
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: How long user agents will redirect to HTTPS, in seconds.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T184353Z

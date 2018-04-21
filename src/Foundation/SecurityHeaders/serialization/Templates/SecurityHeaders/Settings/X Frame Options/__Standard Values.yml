@@ -1,0 +1,22 @@
+﻿---
+ID: "8e8a0526-c8b9-4eec-89d1-3e537b6fd4c2"
+Parent: "eeb45eaf-d9b6-453d-b76a-6ae830db93d0"
+Template: "eeb45eaf-d9b6-453d-b76a-6ae830db93d0"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/X Frame Options/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T191536Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "9ac5a94a-2533-49eb-b4ca-61c434eb9d9d"
+      Hint: X Frame Options
+      Type: Multilist
+      Value: "{69F84F94-E092-47FC-BBE3-282E5A98EEE0}"

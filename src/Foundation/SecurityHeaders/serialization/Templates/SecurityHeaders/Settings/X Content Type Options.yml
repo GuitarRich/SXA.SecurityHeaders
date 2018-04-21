@@ -1,0 +1,33 @@
+﻿---
+ID: "d02155b5-5120-4053-b4dc-00b3d72fdc8c"
+Parent: "b397196f-da13-44e4-a15c-1aa15bc2361f"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/X Content Type Options
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applicationsv2/32x32/documents_gear.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link text="X-Content-Type-Options" linktype="external" url="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" anchor="" target="_blank" />
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{A957AF48-11C4-4818-8E87-9BBBD11ECAA5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T184730Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,21 @@
+﻿---
+ID: "2d2eaeb4-199f-4b2d-b838-34e0365aa7fa"
+Parent: "125ec14b-94ab-49f5-88cb-f0f9a942ed1d"
+Template: "125ec14b-94ab-49f5-88cb-f0f9a942ed1d"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/Referrer Policy/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180421T101218Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3d61ab4-d322-4a94-94d7-cb106aea45e5"
+      Hint: Policy
+      Value: "{CEDA7691-A804-4E69-A397-46E0E2ACC069}"

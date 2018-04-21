@@ -1,0 +1,22 @@
+﻿---
+ID: "56da38b2-b1e4-4884-be29-11b2bab9bf86"
+Parent: "4ca98c4a-9e1a-40b4-b1bf-475994b184ea"
+Template: "4ca98c4a-9e1a-40b4-b1bf-475994b184ea"
+Path: /sitecore/templates/Foundation/SecurityHeaders/Settings/XSS Protection/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03888df2-c647-4339-a822-5b9c85f4c7ce"
+      Hint: Enabled
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T162409Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SXA.Foundation.SecurityHeaders", "src\Foundation\SecurityHeaders\code\SXA.Foundation.SecurityHeaders.csproj", "{9C695C87-5E7D-4534-B522-2C08835DFEB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{E364EC3B-8239-46ED-9782-D20246ADAA8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configration", "Configration", "{0C45BF7E-46FB-4A4C-9168-CDF59BC2D294}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C695C87-5E7D-4534-B522-2C08835DFEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C695C87-5E7D-4534-B522-2C08835DFEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C695C87-5E7D-4534-B522-2C08835DFEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C695C87-5E7D-4534-B522-2C08835DFEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C695C87-5E7D-4534-B522-2C08835DFEB0} = {E364EC3B-8239-46ED-9782-D20246ADAA8E}
+	EndGlobalSection
+EndGlobal
