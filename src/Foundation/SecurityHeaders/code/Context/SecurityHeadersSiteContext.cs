@@ -14,6 +14,9 @@ namespace SXA.Foundation.SecurityHeaders.Context
             _multisiteContext = multisiteContext;
         }
 
+        public Item SiteItem =>
+            _multisiteContext.SiteItem;
+
         public Item SecurityHeadersSettingItem =>
             _multisiteContext.SettingsItem?.Children.FirstOrDefault(item =>
                 item.TemplateID == Templates.SecurityHeaders.Id);

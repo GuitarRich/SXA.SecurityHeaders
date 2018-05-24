@@ -9,34 +9,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "196f808c-a125-49fa-983c-44ab69ead552"
-      Hint: StandardStyles
-      Type: Multilist
-      Value: "{0B2347A4-CFC7-43DB-9DB3-141B727ECF59}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180319T232401Z
-    - ID: "5232c568-bb3c-4fa9-8821-dc0920e4c771"
-      Hint: StandardDefault
-      Type: Multilist
-      Value: "{2E0F4A51-520E-455E-ABAC-A4D8FFC40906}"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "69a8e969-b871-43d6-b2c8-b109853587e9"
-      Hint: StandardFonts
-      Type: Multilist
-      Value: "{0B2347A4-CFC7-43DB-9DB3-141B727ECF59}"
-    - ID: "9929aedd-97f8-4cca-993c-6630183e0172"
-      Hint: StandardFrameAncestors
-      Type: Multilist
-      Value: "{2E0F4A51-520E-455E-ABAC-A4D8FFC40906}"
-    - ID: "9d36cdf5-3048-413f-8e37-8588b989889c"
-      Hint: StandardImages
-      Type: Multilist
-      Value: "{0B2347A4-CFC7-43DB-9DB3-141B727ECF59}"
-    - ID: "ae84a858-5704-49f4-ba9d-3bc483fd7296"
-      Hint: StandardScripts
-      Type: Multilist
-      Value: "{0B2347A4-CFC7-43DB-9DB3-141B727ECF59}"

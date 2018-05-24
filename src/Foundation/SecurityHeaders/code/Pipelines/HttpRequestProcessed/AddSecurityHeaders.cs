@@ -1,11 +1,24 @@
-﻿using Sitecore.Pipelines;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
+using SXA.Foundation.SecurityHeaders.Context;
+using Sitecore.Abstractions;
+using Sitecore.Pipelines;
 using Sitecore.Pipelines.HttpRequest;
 using SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders;
+using Sitecore.Sites;
+
 
 namespace SXA.Foundation.SecurityHeaders.Pipelines.HttpRequestProcessed
 {
     public class AddSecurityHeaders : HttpRequestProcessor
     {
+        private readonly BaseCacheManager _cacheManager;
+
+        public AddSecurityHeaders(BaseCacheManager cacheManager)
+        {
+            _cacheManager = cacheManager;
+        }
+
         public override void Process(HttpRequestArgs args)
         {
             if (args.HttpContext.Response.HeadersWritten ||
@@ -17,13 +30,31 @@ namespace SXA.Foundation.SecurityHeaders.Pipelines.HttpRequestProcessed
                 return;
             }
 
-            // Execute the pipeline
-            var pipelineArgs = new BuildSecurityHeadersArgs();
-            CorePipeline.Run("buildSecurityHeaders", pipelineArgs);
+            var httpCache = _cacheManager.GetHtmlCache(SiteContext.Current);
+            var cacheKey = $"{SiteContext.Current.Name}_#SecurityHeaders#";
+            var headerJson = httpCache.GetHtml(cacheKey);
+            Dictionary<string, string> headers;
 
-            foreach (var header in pipelineArgs.Headers)
+            if (string.IsNullOrWhiteSpace(headerJson))
             {
-                args.HttpContext.Response.AddHeader(header.Key, header.Value);
+                // Execute the pipeline
+                var pipelineArgs = new BuildSecurityHeadersArgs();
+                CorePipeline.Run("buildSecurityHeaders", pipelineArgs);
+                headers = pipelineArgs.Headers;
+                headerJson = JsonConvert.SerializeObject(headers);
+                httpCache.SetHtml(cacheKey, headerJson);
+            }
+            else
+            {
+                headers = JsonConvert.DeserializeObject<Dictionary<string, string>>(headerJson);
+            }
+
+            foreach (var header in headers)
+            {
+                if (!string.IsNullOrWhiteSpace(header.Value))
+                {
+                    args.HttpContext.Response.AddHeader(header.Key, header.Value);
+                }
             }
         }
     }

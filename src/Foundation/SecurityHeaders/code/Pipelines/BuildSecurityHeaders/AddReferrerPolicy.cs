@@ -1,9 +1,9 @@
-﻿using Northwoods.Foundation.SecurityHeaders.Context;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using SXA.Foundation.SecurityHeaders.Context;
 
-namespace Northwoods.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders
+namespace SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders
 {
     public class AddReferrerPolicy : BuildSecurityHeadersProcessor
     {

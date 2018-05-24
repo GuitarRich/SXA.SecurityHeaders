@@ -52,6 +52,9 @@
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -119,10 +122,18 @@
     <Content Include="App_Config\Include\Foundation\SXA.Foundation.SecurityHeaders.config" />
     <Content Include="App_Config\Include\Foundation\SXA.Foundation.SecurityHeaders.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ISecurityHeadersSiteContext.cs" />
     <Compile Include="Context\SecurityHeadersSiteContext.cs" />
+    <Compile Include="Pipelines\BuildSecurityHeaders\AddReferrerPolicy.cs" />
     <Compile Include="Pipelines\BuildSecurityHeaders\AddStrictTransportSecurity.cs" />
     <Compile Include="Pipelines\BuildSecurityHeaders\AddXFrameOptions.cs" />
     <Compile Include="Pipelines\BuildSecurityHeaders\AddXContentTypeOptions.cs" />
