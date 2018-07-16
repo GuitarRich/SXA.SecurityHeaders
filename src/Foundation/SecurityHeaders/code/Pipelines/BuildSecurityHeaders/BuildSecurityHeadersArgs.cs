@@ -5,7 +5,7 @@ using Sitecore.Pipelines;
 // as the serialization is inherited from Sitecore code.
 #pragma warning disable S3925
 
-namespace SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders
+namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 {
     public class BuildSecurityHeadersArgs : PipelineArgs
     {

@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using SXA.Foundation.SecurityHeaders.Context;
+using SXA.Feature.SecurityHeaders.Context;
 using Sitecore.Abstractions;
 using Sitecore.Pipelines;
 using Sitecore.Pipelines.HttpRequest;
-using SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders;
+using SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders;
 using Sitecore.Sites;
 
-
-namespace SXA.Foundation.SecurityHeaders.Pipelines.HttpRequestProcessed
+namespace SXA.Feature.SecurityHeaders.Pipelines.HttpRequestProcessed
 {
     public class AddSecurityHeaders : HttpRequestProcessor
     {

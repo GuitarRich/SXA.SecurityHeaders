@@ -1,7 +1,7 @@
 ﻿using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace SXA.Foundation.SecurityHeaders.Context
+namespace SXA.Feature.SecurityHeaders.Context
 {
     public interface ISecurityHeadersSiteContext
     {

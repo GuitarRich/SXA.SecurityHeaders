@@ -3,7 +3,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.XA.Foundation.Multisite;
 
-namespace SXA.Foundation.SecurityHeaders.Context
+namespace SXA.Feature.SecurityHeaders.Context
 {
     public class SecurityHeadersSiteContext : ISecurityHeadersSiteContext
     {

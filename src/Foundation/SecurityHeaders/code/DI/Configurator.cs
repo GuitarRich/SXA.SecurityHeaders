@@ -1,8 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
-using SXA.Foundation.SecurityHeaders.Context;
+using SXA.Feature.SecurityHeaders.Context;
 
-namespace SXA.Foundation.SecurityHeaders.DI
+namespace SXA.Feature.SecurityHeaders.DI
 {
     public class Configurator : IServicesConfigurator
     {

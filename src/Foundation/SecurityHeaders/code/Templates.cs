@@ -1,6 +1,6 @@
 ﻿using Sitecore.Data;
 
-namespace SXA.Foundation.SecurityHeaders
+namespace SXA.Feature.SecurityHeaders
 {
     public struct Templates
     {

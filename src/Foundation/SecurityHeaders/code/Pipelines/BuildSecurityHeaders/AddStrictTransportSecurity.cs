@@ -1,8 +1,8 @@
 ﻿using System.Text;
 using Sitecore.Data.Fields;
-using SXA.Foundation.SecurityHeaders.Context;
+using SXA.Feature.SecurityHeaders.Context;
 
-namespace SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders
+namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 {
     public class AddStrictTransportSecurity : BuildSecurityHeadersProcessor
     {

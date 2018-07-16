@@ -1,4 +1,4 @@
-﻿namespace SXA.Foundation.SecurityHeaders.Pipelines.BuildSecurityHeaders
+﻿namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 {
     public abstract class BuildSecurityHeadersProcessor 
     {
