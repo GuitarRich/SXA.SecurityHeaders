@@ -56,10 +56,39 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.1.1\lib\net471\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.IoC, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.IoC.4.8.1\lib\NET471\Sitecore.XA.Foundation.IoC.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.MarkupDecorator.4.8.1\lib\NET471\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.Multisite.4.8.1\lib\NET471\Sitecore.XA.Foundation.Multisite.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.4.8.1\lib\NET471\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.RenderingVariants, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.RenderingVariants.4.8.1\lib\NET471\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.4.8.1\lib\NET471\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XA.Foundation.Variants.Abstractions.4.8.1\lib\NET471\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="sysglobl" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -96,27 +125,6 @@
     </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.IoC">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.IoC.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Multisite">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.Multisite.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Mvc">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.RenderingVariants">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions">
-      <HintPath>..\..\..\..\lib\SXA\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
