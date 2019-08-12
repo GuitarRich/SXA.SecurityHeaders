@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SXA.Feature.SecurityHeaders", "src\Foundation\SecurityHeaders\code\SXA.Feature.SecurityHeaders.csproj", "{9C695C87-5E7D-4534-B522-2C08835DFEB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SXA.Feature.SecurityHeaders", "src\Feature\SecurityHeaders\code\SXA.Feature.SecurityHeaders.csproj", "{9C695C87-5E7D-4534-B522-2C08835DFEB0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{E364EC3B-8239-46ED-9782-D20246ADAA8E}"
 EndProject
