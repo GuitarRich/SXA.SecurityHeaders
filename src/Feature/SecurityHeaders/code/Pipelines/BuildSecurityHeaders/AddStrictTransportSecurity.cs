@@ -35,7 +35,7 @@ namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 
             var maxAge = settings[Templates.HttpStrictTransportPolicy.Fields.MaxAge];
             CheckboxField includeSubDomains = settings.Fields[Templates.HttpStrictTransportPolicy.Fields.IncludeSubDomains];
-            CheckboxField preload = settings.Fields[Templates.HttpStrictTransportPolicy.Fields.IncludeSubDomains];
+            CheckboxField preload = settings.Fields[Templates.HttpStrictTransportPolicy.Fields.Preload];
 
             var header = new StringBuilder();
             if (!string.IsNullOrWhiteSpace(maxAge))
