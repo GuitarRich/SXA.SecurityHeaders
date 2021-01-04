@@ -1,14 +1,16 @@
 ﻿using System.Linq;
 using System.Text;
-using Sitecore.Data;
+using SXA.Feature.SecurityHeaders.Context;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using SXA.Feature.SecurityHeaders.Context;
 
 namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 {
     public class AddContentSecurityPolicy : BuildSecurityHeadersProcessor
     {
+        private const string ContentSecurityPolicyHeader = "Content-Security-Policy";
+        private const string ContentSecurityPolicyReportOnlyHeader = "Content-Security-Policy-Report-Only";
+
         private readonly ISecurityHeadersSiteContext _securityHeadersSiteContext;
 
         public AddContentSecurityPolicy(ISecurityHeadersSiteContext securityHeadersSiteContext)
@@ -18,18 +20,25 @@ namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
 
         public override void Process(BuildSecurityHeadersArgs args)
         {
-            var headers = GenerateHeaders();
-            args.Headers.Add("Content-Security-Policy", headers);
-        }
-
-        private string GenerateHeaders()
-        {
             var cspSettings = _securityHeadersSiteContext.GetSettingItem(Templates.ContentSecurityPolicy.Id);
-
             if (cspSettings == null)
             {
-                return string.Empty;
+                return;
             }
+
+            var headers = GenerateHeaders(cspSettings);
+            if (!string.IsNullOrWhiteSpace(headers))
+            {
+                CheckboxField reportOnlyMode = cspSettings.Fields[Templates.ContentSecurityPolicy.Fields.ReportOnly];
+                var header = reportOnlyMode.Checked
+                    ? ContentSecurityPolicyReportOnlyHeader
+                    : ContentSecurityPolicyHeader;
+                args.Headers.Add(header, headers);
+            }
+        }
+
+        private string GenerateHeaders(Item cspSettings)
+        {
 
             var header = new StringBuilder();
 
@@ -43,7 +52,7 @@ namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
                 }
             }
 
-            return header.ToString();
+            return header.ToString().Replace("  ", " ");
         }
 
         private static string RenderSetting(Item policy)
@@ -55,12 +64,12 @@ namespace SXA.Feature.SecurityHeaders.Pipelines.BuildSecurityHeaders
             }
 
             var enums = targetField.GetItems();
-            var standardHosts = string.Join(" ", enums.Select(item => item["value"]));
-            var additionalHosts = policy[Templates.Policy.Fields.AdditionalHosts];
+            var standardHosts = string.Join(" ", enums.Select(item => item["value"]))?.Trim();
+            var additionalHosts = policy[Templates.Policy.Fields.AdditionalHosts]?.Trim();
 
             if (!string.IsNullOrWhiteSpace(standardHosts) || !string.IsNullOrWhiteSpace(additionalHosts))
             {
-                return $"{policy.Name.ToLower()} {standardHosts} {additionalHosts}; ".Trim();
+                return $"{policy.Name.ToLower()} {standardHosts} {additionalHosts}; ".Replace(" ;", "; ");
             }
 
             return string.Empty;
