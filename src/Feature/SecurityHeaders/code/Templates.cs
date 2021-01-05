@@ -15,6 +15,7 @@ namespace SXA.Feature.SecurityHeaders
 
             public struct Fields
             {
+                public static ID ReportOnly => new ID("{9227CAB6-5E8A-4960-8027-F5E5706ED9B6}");
             }
         }
 
